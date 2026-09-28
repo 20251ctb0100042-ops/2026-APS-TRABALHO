@@ -1,4 +1,4 @@
-Meu Acervo Gamer
+Meu Acervo Gamer, Um sistema simples e prático para organizar toda a sua coleção de jogos e controlar seus empréstimos em um só lugar.
 
 > **Antes de tudo.** Este é o modelo do Projeto Integrador de Análise e Projeto de Sistemas. Se você está lendo isto no seu próprio repositório, deu certo. Troque o título acima pelo nome do seu sistema e por uma frase que diga o que ele faz, preencha a autoria e o cliente e apague este aviso.
 
