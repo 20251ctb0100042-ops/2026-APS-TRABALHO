@@ -1,4 +1,4 @@
-# Sistema da Forneria de Cookies 🍪 — Módulo de Cadastro de Ingredientes
+# Sistema da Forneria de Cookies  — Módulo de Cadastro de Ingredientes
 
 Um sistema web simples e prático para cadastrar insumos, gerenciar o estoque de matérias-primas e emitir alertas visuais de ingredientes em nivel crítico na forneria de cookies.
 
