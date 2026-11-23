@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="1farrOS2zoUKsibAaobA">
+    <mxGraphModel dx="934" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="swimlane-operador" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;fontSize=14;" value="Operador" vertex="1">
+          <mxGeometry height="1060" width="340" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="swimlane-operador" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="155" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act-passo1" parent="swimlane-operador" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Solicitar visualização do item no inventário" vertex="1">
+          <mxGeometry height="50" width="180" x="80" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-a1" parent="swimlane-operador" style="rhombus;whiteSpace=wrap;html=1;" value="aplicar filtro?" vertex="1">
+          <mxGeometry height="70" width="110" x="115" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="act-a1" parent="swimlane-operador" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Filtrar exibição entre ingredientes ou embalagens" vertex="1">
+          <mxGeometry height="60" width="150" x="15" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="act-passo4" parent="swimlane-operador" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Informar movimentação e quantidade" vertex="1">
+          <mxGeometry height="50" width="180" x="80" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="swimlane-operador" source="start" target="act-passo1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="swimlane-operador" source="act-passo1" target="dec-a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="swimlane-operador" source="dec-a1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="act-a1" value="[sim]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swimlane-sistema" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;fontSize=14;" value="Sistema" vertex="1">
+          <mxGeometry height="1060" width="580" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act-passo2" parent="swimlane-sistema" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Exigir e validar identificação do operador" vertex="1">
+          <mxGeometry height="50" width="180" x="70" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-e1" parent="swimlane-sistema" style="rhombus;whiteSpace=wrap;html=1;" value="credenciais válidas?" vertex="1">
+          <mxGeometry height="75" width="120" x="100" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e1" parent="swimlane-sistema" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Avisar que as credenciais são inválidas" vertex="1">
+          <mxGeometry height="50" width="180" x="340" y="327.5" as="geometry" />
+        </mxCell>
+        <mxCell id="end-e1" parent="swimlane-sistema" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="415" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="txt-e1" parent="swimlane-sistema" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="sem a pós-condição (E1)" vertex="1">
+          <mxGeometry height="30" width="150" x="355" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="junc-a1" parent="swimlane-sistema" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="140" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="act-passo3" parent="swimlane-sistema" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Apresentar saldo atual do item selecionado" vertex="1">
+          <mxGeometry height="50" width="180" x="70" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="act-verif" parent="swimlane-sistema" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Verificar saldo disponível" vertex="1">
+          <mxGeometry height="50" width="180" x="70" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-e2" parent="swimlane-sistema" style="rhombus;whiteSpace=wrap;html=1;" value="saldo suficiente?" vertex="1">
+          <mxGeometry height="75" width="120" x="100" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e2" parent="swimlane-sistema" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Exibir mensagem de saldo insuficiente e cancelar operação" vertex="1">
+          <mxGeometry height="60" width="200" x="330" y="742.5" as="geometry" />
+        </mxCell>
+        <mxCell id="end-e2" parent="swimlane-sistema" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="415" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="txt-e2" parent="swimlane-sistema" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="sem a pós-condição (E2)" vertex="1">
+          <mxGeometry height="30" width="150" x="355" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="act-passo5" parent="swimlane-sistema" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Registrar alteração do saldo de estoque" vertex="1">
+          <mxGeometry height="50" width="180" x="70" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="end-ok" parent="swimlane-sistema" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="145" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="txt-ok" parent="swimlane-sistema" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="com a pós-condição" vertex="1">
+          <mxGeometry height="30" width="130" x="95" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="swimlane-sistema" source="act-passo2" target="dec-e1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="swimlane-sistema" source="dec-e1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="act-e1" value="[não]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="swimlane-sistema" source="act-e1" target="end-e1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="swimlane-sistema" source="dec-e1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="junc-a1" value="[sim]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="swimlane-sistema" source="junc-a1" target="act-passo3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="swimlane-sistema" source="act-verif" target="dec-e2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="swimlane-sistema" source="dec-e2" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="act-e2" value="[não]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="swimlane-sistema" source="act-e2" target="end-e2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="swimlane-sistema" source="dec-e2" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="act-passo5" value="[sim]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="swimlane-sistema" source="act-passo5" target="end-ok">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="dec-a1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="act-passo2" value="[não]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="act-a1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="junc-a1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="act-passo3" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="act-passo4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="610" />
+              <mxPoint x="250" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="act-passo4" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="act-verif">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
